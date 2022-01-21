@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root {
+    background-color: #E5E5E5;
+}
+.main-nav {
+width: 110px;
+height: 100vh;
+left: 0px;
+top: 0px;
+background: #F7F6FF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+position: fixed;
+transition: max-width 0.2s ease-in 0s;
+}
+.main-nav:hover {
+    width: 230px;
+    
+}
+.logo-img {
+width: 80px;
+height: 40px;
+left: 10px;
+top: 50px;
+position: relative;
+
+}
+.main-nav:hover .logo-img {
+    transform: translateX(60%);
+}
+.main-nav hr {
+    position: absolute;
+    width: 75px;
+    left: 13px;
+    top: 110px;
+    margin: 0;
+    color: #c4c4c4;
+    height: 3px;
+    transition: max-width 0.2s ease-in 0s;
+}
+.main-nav:hover hr{
+    width: 200px;
+}
+.logo {
+    position: relative;
+    top: 125px;
+    left: 25px;
+    width: 85px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 30px 0 0 30px;
+    margin-top: 10px;
+}
+.logo:hover {
+    background-color: #ffffff;
+    width: 205px;
+}
+.logo:hover img {
+    filter: invert();
+}
+.logo:hover a {
+    color: #02577A;
+}
+.img {
+    position: relative;
+    top: 47%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    height: 25px;
+    width: 25px;
+    margin-left:5px
+}
+.main-nav .logo:last-child .img{
+    height: 25px;
+    width: 40px;
+}
+a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    text-align: center;
+    color: #C4C4C4;
+    font-family: Montserrat;
+    font-size: 15px;
+    margin-left: 45px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    transition-delay: 0s;
+}
+
+.main-nav:hover a {
+    visibility: visible;
+    opacity: 1;
+}
+.fotter {
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: #02577A;
+    text-align: center;
+}
+.fotter hr {
+    width: 300px;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
