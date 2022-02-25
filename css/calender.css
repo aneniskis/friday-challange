@@ -1,0 +1,228 @@
+.container.calendor-con {
+    width: 90%;
+    display: flex;
+    position: absolute;
+    margin-left: 5%;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.row3 {
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+.progres-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+.row-bar{
+    padding: 10px 15px 10px 30px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    font-family: "Montserrat";
+
+}
+.row-bar.btn {
+    background-color: transparent;
+    padding-left: 0;
+}
+.progres-bar .bar{
+    width: 35%;
+    background-color: red;
+    height: 15px;
+    margin: 15px 0 15px 0;
+    border-radius: 10px;
+}
+.bar.bar-yellow {
+    background-color: #fce300;
+}
+.bar.bar-green {
+    background-color: #51FC00;
+}
+.row-bar .title {
+    font-size: 26px;
+    line-height: 1.5em;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.title.big {
+    text-transform: uppercase;
+}
+.row-bar .title::after{
+    content: "...";
+    font-size: 16px;
+    padding-right: 20px;
+}
+.row-bar .label {
+    color: #c4c4c4;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+
+.btn-plius {
+    background-color: #02577a;
+    border: 3px solid #02577a;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+.btn-plius:hover {
+    background-color: #ffffff;
+}
+.btn-plius::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 30px;
+}
+.btn-plius:hover::after {
+    color: #02577a;
+}
+.main-nav:hover .logo.active{
+    width: 205px;
+}
+.logo.active  {
+    background-color: #ffffff;
+}
+
+.row-calendor {
+    width: 45%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: #000000;
+    padding: 20px 30px 0 30px;
+    height: 480px;
+}
+.months{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 30px;
+    font-family: "Montserrat";
+}
+
+.weekdays {
+    width: 100%;
+    height: 1.5em;
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #c4c4c4;
+    padding:0 0  35px 0px;
+    border-bottom: 1px solid #C4C4C4;
+
+}
+.weekdays div {
+    display: flex;
+    width: calc(100% / 7);
+    align-items: center;
+    justify-content: center;
+
+}
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0 16px 0;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 24px;
+}
+.days div {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%/7);
+    padding: 10px;
+}
+.prev-date,
+.next-date {
+    color: #c4c4c4;
+}
+@media(max-width:900px){
+    .container.calendor-con{
+        flex-direction: column-reverse;
+        margin-top: 70px;
+    }
+    .row-calendor,
+    .row3 {
+        margin-right: 20px;
+        width: 80%;
+        align-self: flex-end;
+        gap: 10px;
+    }
+    .progres-bar {
+        gap: 1px;
+    }
+    .row-bar .title {
+        font-size: 17px;
+        line-height: 1em;
+        margin-bottom: 5px;
+    }
+    .row-bar .label {
+        font-size: 13px;
+        line-height: 1em;
+    }
+    .row-bar .bar {
+        height: 9px;
+        margin: 10px 0 10px 0;
+    }
+    .row-bar {
+        height: 80px;
+    }
+    .row-bar.btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .btn-plius {
+        height: 35px;
+        width: 35px;
+    }
+    .weekdays {
+        padding: 0 0 40px 0px;
+        font-size: 16px;
+    }
+    .row-calendor {
+        height: 390px;
+    }
+
+    .days div {
+        line-height: 1em;
+        font-size: 16px;
+    }
+    
+}
+.bob {
+    background-color: #02577a;
+    color: #ffffff;
+    border-radius: 50%;
+}
+.days div:hover:not(bob){
+    border: 2px solid #02577a;
+}
