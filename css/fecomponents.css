@@ -1,0 +1,238 @@
+ 
+ /* loader  */
+.loader{
+    height: 120px;
+    width: 120px;
+    background-color: #E5E5E5;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+}
+.circle-progress {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    background-color: #C9C9C9;;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.animationBar {
+    transform: scale(1);
+     animation: pulse 2s 5;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(0.8);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    
+    70% {
+      transform: scale(1.2);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    
+    100% {
+      transform: scale(0.8);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+.circle-progress::before{
+    content: '';
+    position: absolute;
+    background-color: #E5E5E5;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+.circle-value{
+    position: relative;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color:#02577A
+}
+.animation {
+    transform: scale(1);
+     animation: pulse-black 2s 5;
+  }
+  @keyframes pulse-black {
+    0% {
+      transform: scale(0.8);
+      /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7); */
+    }
+    
+    70% {
+      transform: scale(1.2);
+      /* box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); */
+    }
+    
+    100% {
+      transform: scale(0.8);
+      /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); */
+    }
+  }
+/* loader */
+/* ///////////akordionas */
+ .row{
+     position: absolute;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 500px;
+     
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.accordion .contentAC {
+    font-family: Montserrat;
+    gap: 10px;
+}
+.accordion .labelAc {
+    justify-content: flex-start;
+    background-color: #02577A;    
+    color: #ffffff;
+    padding: 10px 10px 10px 40px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.accordion .contentAC.active .labelAc{
+    border-radius: 15px 15px 0 0px;
+}
+
+.accordion .labelAc::before{
+    content: '\f062';
+    font-family: fontAwesome;
+    margin-right: 20px;
+}
+.accordion .contentAC.active .labelAc::before{
+    
+    content: '\f063';
+    font-family: fontAwesome;
+    margin-right: 20px;
+    
+}
+.accordion .contentAA{
+    position: relative;
+    background-color: #ffffff;
+    /* padding: 30px 10px 30px 40px; */
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s;
+    /* overflow-y: auto; */
+}
+.accordion .contentAC.active .contentAA{
+    height: 120px;
+    padding: 30px 40px 30px 40px;
+    border-radius: 0 0px 15px 15px;
+}
+/* acordionas */
+/* slider */
+.teste{
+    margin-top: 400px;
+    /* margin-left: 60px; */
+
+}
+.slider {
+    /* max-width: 100rem; */
+    max-width: 450px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    
+   
+
+}
+
+
+.slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+}
+/* slider */
+.testemonial {
+    background-color: #ffffff;
+    font-family: Montserrat;
+    padding: 25px 65px 25px 65px;
+    border-radius: 30px;
+    border: 2px solid #02577A;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    
+    
+    /* display: flex; */
+    
+}
+
+.testemonial-text {
+    color: #02577A ;
+    display: flex;
+    flex-direction: column;
+    
+}
+.testemonial-authos{
+    text-align: end;
+    font-size: 12px;
+    
+}
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #02577A;
+    border-radius: 50%;
+    /* border:1px solid #02577A; */
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .slider__btn--left {
+    left: 8%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .slider__btn--right {
+    right: 8%;
+    transform: translate(50%, -50%);
+  }
+  
+@media (max-width:800px){
+    .loader {
+        margin-left: 40px;
+    }
+    .row {
+        width: 350px;
+        margin-left: 40px;
+    }
+    .accordion .contentAC.active .contentAA{
+        height: 150px;
+        padding: 30px 40px 30px 40px;
+        border-radius: 0 0px 15px 15px;
+    }
+    .slider {
+        max-width: 350px;
+    }
+    .teste {
+        margin-left: 70px;
+    }
+}

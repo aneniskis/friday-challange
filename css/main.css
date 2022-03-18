@@ -20,7 +20,7 @@ body {
 }
 .main-nav {
 width: 110px;
-height: 100vh;
+height: 100%;
 left: 0px;
 top: 0px;
 background: #F7F6FF;

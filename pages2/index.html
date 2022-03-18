@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/fecomponents.css">
+    <title>Fe components</title>
+</head>
+<body>
+    <section>
+        <div class="loader">
+            <div class="circle-progress">
+                <div class="circle-value"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class='row'>
+        <div class="accordion">
+            <div class="contentAC">
+                <div class="labelAc">Question One</div>
+                <div class="contentAA">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, modi commodi magni excepturi asperiores dolores.</p>
+                </div>
+            </div>
+            <div class="contentAC">
+                <div class="labelAc">Question Two</div>
+                <div class="contentAA">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, a quis rerum beatae eius exercitationem.</p>
+                </div>
+            </div>
+            <div class="contentAC">
+                <div class="labelAc">Question Two</div>
+                <div class="contentAA">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur in temporibus saepe, maxime tenetur id!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="teste">
+        <div class="slider">
+            <div class="slide">
+                <div class="testemonial">
+                    <h5 class="testemonial-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut similique temporibus deleniti quisquam modi corrupti?
+                    </h5>
+                    <p class="testemonial-authos">Jon, Shutter Island </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="testemonial">
+                    <h5 class="testemonial-text">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vel voluptates qui in impedit illum!
+                    </h5>
+                    <p class="testemonial-authos">Jonas, Lithuania </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="testemonial">
+                    <h5 class="testemonial-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis veniam magni provident atque natus facilis?
+                    </h5>
+                    <p class="testemonial-authos">Josh,  Green Mile</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="testemonial">
+                    <h5 class="testemonial-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia eveniet, quam totam ea sequi in!
+                    </h5>
+                    <p class="testemonial-authos"> Dzon, Easter Island </p>
+                </div>
+            </div>
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+
+        </div>
+    </section>
+    
+    
+    <nav class="main-nav noHover ">
+        <img class="logo-img" src="../assets/logo.png" alt="logo">
+        <hr class="noHover">
+        <div class="logo  first">
+            <img class="img " src="../assets/home.png" alt="home">
+            <a href="../index.html">Home</a>
+        </div>
+        <div class="logo active">
+            <img class="img" src="../assets/calendar.png" alt="">
+            <a href="../pages/index.html">Calender</a>
+        </div>
+        <div class="logo active">
+             <img class="img" src="../assets/fe.png" alt="">
+            <a href="#">Fe</a>
+        </div>
+        <div class="logo">
+            <img class="img" src="../assets/games.png" alt="">
+            <a href="">Games</a>
+        </div>
+    </nav>
+    <footer class="fotter">
+        <hr>
+        <p>&copy; Baltic Institute of Technology</p>
+    </footer>
+<script>
+    const accordion = document.querySelectorAll('.contentAC');
+    console.log(accordion);
+accordion.forEach(elem=>{
+    elem.addEventListener('click',()=>{
+        elem.classList.toggle('active')
+    })
+})
+</script>
+<script src="../components/loader.js" defer></script>
+<script src="../components/slider.js"></script>
+</body>
+</html>

@@ -225,4 +225,5 @@
 }
 .days div:hover:not(bob){
     border: 2px solid #02577a;
+    cursor: pointer;
 }
