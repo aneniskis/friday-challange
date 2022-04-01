@@ -102,7 +102,7 @@
 }
 
 .row-calendor {
-    width: 45%;
+    width: 450px;
     background-color: #ffffff;
     border-radius: 20px;
     color: #000000;
@@ -127,7 +127,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 20px;
     color: #c4c4c4;
     padding:0 0  35px 0px;
     border-bottom: 1px solid #C4C4C4;
@@ -154,7 +154,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,6 +165,16 @@
 .next-date {
     color: #c4c4c4;
 }
+.bob {
+    background-color: #02577a;
+    color: #ffffff;
+    border-radius: 50%;
+
+}
+.days div:hover:not(bob){
+    border: 2px solid #02577a;
+    cursor: pointer;
+}
 @media(max-width:900px){
     .container.calendor-con{
         flex-direction: column-reverse;
@@ -173,8 +183,9 @@
     .row-calendor,
     .row3 {
         margin-right: 20px;
-        width: 80%;
-        align-self: flex-end;
+        width: 350px;
+        height: 350px;
+        align-self: center;
         gap: 10px;
     }
     .progres-bar {
@@ -213,17 +224,15 @@
     }
 
     .days div {
-        line-height: 1em;
+        line-height: 1.3em;
         font-size: 16px;
     }
     
 }
-.bob {
-    background-color: #02577a;
-    color: #ffffff;
-    border-radius: 50%;
-}
-.days div:hover:not(bob){
-    border: 2px solid #02577a;
-    cursor: pointer;
+@media (max-width:575px){
+    .row-calendor,
+    .row3 {
+        align-self: flex-end;
+    }
+
 }

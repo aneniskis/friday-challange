@@ -79,10 +79,14 @@
 /* ///////////akordionas */
  .row{
      position: absolute;
-     top: 30%;
+     top: 35%;
      left: 50%;
      transform: translate(-50%, -50%);
      width: 500px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
      
 }
 .accordion{
@@ -129,14 +133,14 @@
     /* overflow-y: auto; */
 }
 .accordion .contentAC.active .contentAA{
-    height: 120px;
-    padding: 30px 40px 30px 40px;
+    height: 100px;
+    padding: 20px 40px 30px 40px;
     border-radius: 0 0px 15px 15px;
 }
 /* acordionas */
 /* slider */
 .teste{
-    margin-top: 400px;
+    margin-top: 500px;
     /* margin-left: 60px; */
 
 }

@@ -68,4 +68,9 @@
     border-radius: 25px;
     display: flex;
 }
-
+.current-date{
+    display: flex;
+    
+    color: #02577A;
+    
+}
